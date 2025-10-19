@@ -78,5 +78,4 @@ make test2     # Runs complicated.flow
 make clean
 ```
 
-## Partner Information
-See partner.txt for team member details.
+
