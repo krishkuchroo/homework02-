@@ -1,0 +1,12 @@
+node=mkdir_attempt
+command=mkdir a
+
+node=word_count
+command=wc
+
+stderr=stderr_capture
+from=mkdir_attempt
+
+pipe=catch_errors
+from=stderr_capture
+to=word_count
