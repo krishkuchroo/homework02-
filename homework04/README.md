@@ -226,10 +226,10 @@ All three implementations work correctly with no lost keys:
 
 | Implementation       | 8-Thread Retrieve Time (s) | Overhead vs Original | Correctness    |
 |---------------------|---------------------------|---------------------|----------------|
-| Original (Unsafe)   | 0.25                      | Baseline            | ❌ Loses keys  |
-| Global Mutex        | 2.98                      | 1092% (11.9x)       | ✓ Correct      |
-| Spinlock            | 4.82                      | 1828% (19.3x)       | ✓ Correct      |
-| Per-Bucket Mutex    | 0.87                      | 248% (3.5x)         | ✓ Correct      |
+| Original (Unsafe)   | 0.25                      | Baseline            |  Loses keys   |
+| Global Mutex        | 2.98                      | 1092% (11.9x)       |  Correct      |
+| Spinlock            | 4.82                      | 1828% (19.3x)       |  Correct      |
+| Per-Bucket Mutex    | 0.87                      | 248% (3.5x)         |  Correct      |
 
 ### Key Lesson
 
